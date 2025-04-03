@@ -6,8 +6,11 @@ This repository presents Adapter design pattern.This design pattern belongs to s
 ### 🎯 Features
  
 The example includes:
+✅ A target interface which is an interface for processing payment.
 
+✅ An adapter class which implements target interface and composing adaptee instance.
 
+✅ An adaptee class which is not compatible in our system and we need to use it.
 
 ### Use cases
  
