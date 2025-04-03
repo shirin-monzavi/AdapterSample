@@ -9,9 +9,9 @@ public class PaymentAdapter : IPaymentProcessor
     private readonly TranditionalPayment _traditionalPayment;
     #endregion
 
-    public PaymentAdapter(TranditionalPayment oldPaymentSystem)
+    public PaymentAdapter(TranditionalPayment tranditionalPayment)
     {
-        _traditionalPayment = oldPaymentSystem;
+        _traditionalPayment = tranditionalPayment;
     }
 
     public void ProcessPayment(decimal amount)

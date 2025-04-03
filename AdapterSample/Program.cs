@@ -2,8 +2,8 @@
 using AdapterSample.Adaptesses;
 using AdapterSample.Targets;
 
-TranditionalPayment oldPaymentSystem = new();
+TranditionalPayment tranditionalPayment = new();
 
-IPaymentProcessor paymentProcessor = new PaymentAdapter(oldPaymentSystem);
+IPaymentProcessor paymentProcessor = new PaymentAdapter(tranditionalPayment);
 
 paymentProcessor.ProcessPayment(100.00m); 
